@@ -1,3 +1,4 @@
+import { nuevoCliente } from "./API.js";
 import { mostrarAlerta } from "./funciones.js";
 
 (function () {
@@ -28,7 +29,8 @@ function validarFormulario (e) {
         return;
     }
 
-    console.log("Están todos llenos, así que sigo ejecutando el código.")
+    // Si pasa la validación opero con la API (API.js) pasándole el objeto.
+    nuevoCliente(cliente);
 
 }
 
