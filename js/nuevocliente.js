@@ -17,10 +17,10 @@ function validarFormulario (e) {
 
     // Objeto con todos los valores de los input
     const cliente = {
-        inputNombre,
-        inputEmail,
-        inputTelefono,
-        inputEmpresa
+        nombre: inputNombre,
+        email: inputEmail,
+        telefono: inputTelefono,
+        empresa: inputEmpresa
     }
 
     if ( validacion(cliente) ) {
