@@ -8,10 +8,10 @@
       "id": 26
     },
     {
-      "inputNombre": "asdsadads",
-      "inputEmail": "asd@asd",
-      "inputTelefono": "111231232132",
-      "inputEmpresa": "asdsdaasd",
+      "nombre": "Test",
+      "email": "test@test.com",
+      "telefono": "12323",
+      "empresa": "Testttt",
       "id": 27
     }
   ]
