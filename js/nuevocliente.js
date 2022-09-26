@@ -1,3 +1,4 @@
+import { mostrarAlerta } from "./funciones.js";
 
 (function () {
 
@@ -23,7 +24,7 @@ function validarFormulario (e) {
 
     if ( validacion(cliente) ) {
         // Si retorna true entonces
-        console.log('Todos los campos son obligatorios.');
+        mostrarAlerta('Todos los campos son obligatorios.')
         return;
     }
 
