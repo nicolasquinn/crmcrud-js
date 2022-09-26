@@ -1,7 +1,8 @@
 
-export const nuevoCliente = async (cliente) => {
+const url = 'http://localhost:4000/clientes';
 
-    const url = 'http://localhost:4000/clientes';
+// Crear nuevo cliente e insertarlo en la DB.
+export const nuevoCliente = async (cliente) => {
 
     try {
         // Hago el fetch con objeto de configuración.
@@ -17,5 +18,15 @@ export const nuevoCliente = async (cliente) => {
     } catch (error) {
         console.log(error);
     }
+}
 
-} 
+// Obtener los clientes de la DB.
+export const obtenerClientes = async () => {
+    try {
+        const respuesta = await fetch(url);
+        const clientes = await respuesta.json();
+        return clientes;
+    } catch (error) {
+        console.log(error);
+    }
+}
