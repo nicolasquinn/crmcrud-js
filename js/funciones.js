@@ -28,7 +28,9 @@ export function mostrarAlerta (msj) {
         }, 3500);
 
     }
+}
 
-
-
+export function validacion (obj) {
+    // Validación de todos los inputs tienen que tener algo. Si al menos 1 es un string vacío, retorna true.
+    return !Object.values(obj).every( input => input !== '' );
 }

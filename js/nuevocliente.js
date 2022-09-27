@@ -1,5 +1,5 @@
 import { nuevoCliente } from "./API.js";
-import { mostrarAlerta } from "./funciones.js";
+import { mostrarAlerta, validacion } from "./funciones.js";
 
 (function () {
 
@@ -33,12 +33,5 @@ function validarFormulario (e) {
     nuevoCliente(cliente);
 
 }
-
-function validacion (obj) {
-    // Validación de todos los inputs tienen que tener algo. Si al menos 1 es un string vacío, retorna true.
-    return !Object.values(obj).every( input => input !== '' );
-}
-
-
 
 })();
